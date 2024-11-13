@@ -1,0 +1,394 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecionar jogadores"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="16dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ScrollView para permitir rolagem caso necessário -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- GL -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GL:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedGL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp"
+                        />
+                </LinearLayout>
+
+                <!-- LD -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LD:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- ZAG1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZAG1:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedZAG1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- ZAG2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZAG2:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedZAG2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- LE -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LE:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- VOL -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VOL:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedVOL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- MC1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MC1:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedMC1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- MC2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MC2:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedMC2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+
+                <!-- PD -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PD:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp"
+                        />
+                </LinearLayout>
+
+                <!-- ATA -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ATA:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedATA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp"
+                        />
+                </LinearLayout>
+
+                <!-- PE -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_background"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PE:"
+                        android:layout_marginRight="1dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectedPE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar jogador"
+                        android:textSize="16sp"
+                        android:textColor="#BDBDBD"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="16dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/buttonDetailsFragment"
+            android:name="com.example.draftbrasileirao.ButtonDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:paddingTop="105dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha sua formação"
+        android:textColor="#E5E5E5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnChooseFormation"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textColor="#86EFAC"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"
+        android:text="Escolher formação"
+        android:layout_gravity="center"
+        />
+
+    <!-- TextView para exibir a formação escolhida -->
+    <TextView
+        android:id="@+id/tvSelectedFormation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formação selecionada: Nenhuma"
+        android:textSize="18sp"
+        android:textColor="#E5E5E5"
+        android:layout_gravity="center"
+        android:paddingTop="16dp" />
+
+    <!-- Espaçador para empurrar o fragmento dos botões para baixo -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/buttonDetailsFragment"
+        android:name="com.example.draftbrasileirao.ButtonDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

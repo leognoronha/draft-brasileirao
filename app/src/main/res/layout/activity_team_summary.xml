@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campo_fut">
+
+    <!-- Guidelines verticais -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <!-- Guidelines horizontais -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_forward"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_midfield"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_defense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_goalkeeper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <!-- Atacantes -->
+
+    <!-- Ponta Esquerda (PE) -->
+    <TextView
+        android:id="@+id/pe"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="PE"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_forward" />
+
+    <!-- Nome do jogador PE -->
+    <TextView
+        android:id="@+id/pe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/pe"
+        app:layout_constraintStart_toStartOf="@id/pe"
+        app:layout_constraintEnd_toEndOf="@id/pe"
+        android:layout_marginTop="2dp" />
+
+    <!-- Atacante (ATA) -->
+    <TextView
+        android:id="@+id/ata"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ATA"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center"
+        app:layout_constraintTop_toTopOf="@id/guideline_forward" />
+
+    <!-- Nome do jogador ATA -->
+    <TextView
+        android:id="@+id/ata_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ata"
+        app:layout_constraintStart_toStartOf="@id/ata"
+        app:layout_constraintEnd_toEndOf="@id/ata"
+        android:layout_marginTop="2dp" />
+
+    <!-- Ponta Direita (PD) -->
+    <TextView
+        android:id="@+id/pd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="PD"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_forward" />
+
+    <!-- Nome do jogador PD -->
+    <TextView
+        android:id="@+id/pd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/pd"
+        app:layout_constraintStart_toStartOf="@id/pd"
+        app:layout_constraintEnd_toEndOf="@id/pd"
+        android:layout_marginTop="2dp" />
+
+    <!-- Meio-Campistas -->
+
+    <!-- Meio-Campo 1 (MC1) -->
+    <TextView
+        android:id="@+id/mc1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MC1"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_midfield" />
+
+    <!-- Nome do jogador MC1 -->
+    <TextView
+        android:id="@+id/mc1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/mc1"
+        app:layout_constraintStart_toStartOf="@id/mc1"
+        app:layout_constraintEnd_toEndOf="@id/mc1"
+        android:layout_marginTop="2dp" />
+
+    <!-- Volante (VOL) -->
+    <TextView
+        android:id="@+id/vol"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="VOL"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center"
+        app:layout_constraintTop_toTopOf="@id/guideline_midfield" />
+
+    <!-- Nome do jogador VOL -->
+    <TextView
+        android:id="@+id/vol_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/vol"
+        app:layout_constraintStart_toStartOf="@id/vol"
+        app:layout_constraintEnd_toEndOf="@id/vol"
+        android:layout_marginTop="2dp" />
+
+    <!-- Meio-Campo 2 (MC2) -->
+    <TextView
+        android:id="@+id/mc2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MC2"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center_right"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_midfield" />
+
+    <!-- Nome do jogador MC2 -->
+    <TextView
+        android:id="@+id/mc2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/mc2"
+        app:layout_constraintStart_toStartOf="@id/mc2"
+        app:layout_constraintEnd_toEndOf="@id/mc2"
+        android:layout_marginTop="2dp" />
+
+    <!-- Defensores -->
+
+    <!-- Lateral Esquerdo (LE) -->
+    <TextView
+        android:id="@+id/le"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="LE"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_defense" />
+
+    <!-- Nome do jogador LE -->
+    <TextView
+        android:id="@+id/le_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/le"
+        app:layout_constraintStart_toStartOf="@id/le"
+        app:layout_constraintEnd_toEndOf="@id/le"
+        android:layout_marginTop="2dp" />
+
+    <!-- Zagueiro 1 (ZAG1) -->
+    <TextView
+        android:id="@+id/zag1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ZAG1"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_defense" />
+
+    <!-- Nome do jogador ZAG1 -->
+    <TextView
+        android:id="@+id/zag1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/zag1"
+        app:layout_constraintStart_toStartOf="@id/zag1"
+        app:layout_constraintEnd_toEndOf="@id/zag1"
+        android:layout_marginTop="2dp" />
+
+    <!-- Zagueiro 2 (ZAG2) -->
+
+    <!-- Nome do jogador ZAG2 -->
+
+    <TextView
+        android:id="@+id/zag2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="ZAG2"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center_right"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@id/guideline_center_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_defense" />
+
+    <TextView
+        android:id="@+id/zag2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/zag2"
+        app:layout_constraintStart_toStartOf="@id/zag2"
+        app:layout_constraintEnd_toEndOf="@id/zag2"
+        android:layout_marginTop="2dp" />
+
+    <!-- Lateral Direito (LD) -->
+    <TextView
+        android:id="@+id/ld"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="LD"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_defense" />
+
+    <!-- Nome do jogador LD -->
+    <TextView
+        android:id="@+id/ld_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ld"
+        app:layout_constraintStart_toStartOf="@id/ld"
+        app:layout_constraintEnd_toEndOf="@id/ld"
+        android:layout_marginTop="2dp" />
+
+    <!-- Goleiro (GL) -->
+    <TextView
+        android:id="@+id/gl"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="GL"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center"
+        app:layout_constraintTop_toTopOf="@id/guideline_goalkeeper" />
+
+    <!-- Nome do jogador GL -->
+    <TextView
+        android:id="@+id/gl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/gl"
+        app:layout_constraintStart_toStartOf="@id/gl"
+        app:layout_constraintEnd_toEndOf="@id/gl"
+        android:layout_marginTop="2dp" />
+
+    <!-- Botões de navegação -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <fragment
+            android:id="@+id/buttonDetailsFragment"
+            android:name="com.example.draftbrasileirao.ButtonDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

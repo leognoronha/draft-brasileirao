@@ -1,0 +1,55 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#0A0A0A"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E5E5E5"
+            android:text="Escolha o nome do time"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/etTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#525252"
+            android:backgroundTint="#525252"
+            android:hint="Digite o nome do time"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="140dp"
+            android:textColor="#86EFAC"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btnRestartDraft"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_gray"
+            android:text="Reiniciar Draft"
+            android:textColor="#A3A3A3" />
+
+    </LinearLayout>
+
+</FrameLayout>

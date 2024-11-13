@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado pressionado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#262626" /> <!-- Cor do botão ao ser pressionado -->
+            <corners android:radius="6dp" /> <!-- Borda arredondada -->
+        </shape>
+    </item>
+
+    <!-- Estado padrão -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#262626" /> <!-- Cor padrão do botão -->
+            <corners android:radius="6dp" /> <!-- Borda arredondada -->
+        </shape>
+    </item>
+</selector>
